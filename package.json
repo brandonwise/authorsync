@@ -9,8 +9,8 @@
   },
   "scripts": {
     "test": "node --test",
-    "lint": "oxlint src tests",
-    "format": "oxfmt src tests",
+    "lint": "npx oxlint src tests",
+    "format": "npx oxfmt src tests",
     "check": "npm run lint && npm run test"
   },
   "keywords": [
