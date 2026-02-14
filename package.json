@@ -1,0 +1,13 @@
+{
+  "name": "authorsync",
+  "version": "0.1.0",
+  "description": "CLI tool to detect duplicate git authors and generate .mailmap files — finds mismatched name/email combinations, clusters similar identities, and outputs a ready-to-use mailmap for clean git history",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"TODO: add tests\" && exit 0",
+    "lint": "echo \"TODO: add linter\" && exit 0",
+    "build": "echo \"TODO: add build\" && exit 0"
+  },
+  "private": true
+}
