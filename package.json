@@ -1,13 +1,37 @@
 {
   "name": "authorsync",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "CLI tool to detect duplicate git authors and generate .mailmap files — finds mismatched name/email combinations, clusters similar identities, and outputs a ready-to-use mailmap for clean git history",
+  "type": "module",
   "main": "src/index.js",
-  "scripts": {
-    "start": "node src/index.js",
-    "test": "echo \"TODO: add tests\" && exit 0",
-    "lint": "echo \"TODO: add linter\" && exit 0",
-    "build": "echo \"TODO: add build\" && exit 0"
+  "bin": {
+    "authorsync": "./src/cli.js"
   },
-  "private": true
+  "scripts": {
+    "test": "node --test",
+    "lint": "oxlint src tests",
+    "format": "oxfmt src tests",
+    "check": "npm run lint && npm run test"
+  },
+  "keywords": [
+    "git",
+    "mailmap",
+    "author",
+    "identity",
+    "duplicate",
+    "consolidate",
+    "cli"
+  ],
+  "author": "Brandon Wise",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brandonwise/authorsync.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "src"
+  ]
 }
